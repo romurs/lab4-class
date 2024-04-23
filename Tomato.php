@@ -8,10 +8,10 @@ class Tomato
     private const RED_TOMATO = 3;
 
 
-    private $index;
-    private $state;
+    private int $index;
+    private int $state;
 
-    public function __construct($index)
+    public function __construct(int $index)
     {
         $this->index = $index;
         $this->state = self::NOTHING;

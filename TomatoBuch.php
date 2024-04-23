@@ -3,7 +3,7 @@ require "Tomato.php";
 
 class TomatoBuch
 {
-    public $tomatoes = [];
+    public array $tomatoes = [];
 
     public function __construct(int $count)
     {
@@ -19,7 +19,7 @@ class TomatoBuch
         }
     }
 
-    public function allAreRipe():bool
+    public function allAreRipe(): bool
     {
         foreach ($this->tomatoes as $tomato) {
             if (!$tomato->isRipe()) {
@@ -29,7 +29,7 @@ class TomatoBuch
         return true;
     }
 
-    public function giveAwayAll():array
+    public function giveAwayAll(): array
     {
         return $this->tomatoes = [];
     }
