@@ -19,7 +19,7 @@ class TomatoBuch
         }
     }
 
-    public function allAreRipe()
+    public function allAreRipe():bool
     {
         foreach ($this->tomatoes as $tomato) {
             if (!$tomato->isRipe()) {
@@ -29,7 +29,7 @@ class TomatoBuch
         return true;
     }
 
-    public function giveAwayAll()
+    public function giveAwayAll():array
     {
         return $this->tomatoes = [];
     }

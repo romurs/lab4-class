@@ -12,14 +12,14 @@ class Gardener
         $this->plant = $plant;
     }
 
-    public function  work()
+    public function  work(): void
     {
         if (!$this->plant->allAreRipe()) {
             $this->plant->growAll();
         }
     }
 
-    public function harvest()
+    public function harvest(): void
     {
         if ($this->plant->allAreRipe()) {
             $this->plant->giveAwayAll();
@@ -29,7 +29,7 @@ class Gardener
         }
     }
 
-    public function KnowledgeBase()
+    public function KnowledgeBase(): void
     {
         print "Справка по садоводству:\n";
         print "1. Регулярный полив растений.\n";

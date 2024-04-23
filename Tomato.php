@@ -17,14 +17,14 @@ class Tomato
         $this->state = self::NOTHING;
     }
 
-    public function grow()
+    public function grow(): void
     {
         if ($this->state < self::RED_TOMATO) {
             $this->state++;
         }
     }
 
-    public function isRipe()
+    public function isRipe(): bool
     {
         if ($this->state == self::RED_TOMATO) {
             return true;
