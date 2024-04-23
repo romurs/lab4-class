@@ -3,10 +3,10 @@
 
 class Gardener
 {
-    public $name;
-    private $plant;
+    public string $name;
+    private TomatoBuch $plant;
 
-    public function __construct($name, TomatoBuch $plant)
+    public function __construct(string $name, TomatoBuch $plant)
     {
         $this->name = $name;
         $this->plant = $plant;

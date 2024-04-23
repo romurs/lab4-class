@@ -11,7 +11,7 @@ class Tomato
     private $index;
     private $state;
 
-    public function __construct($index)
+    public function __construct(int $index)
     {
         $this->index = $index;
         $this->state = self::NOTHING;
