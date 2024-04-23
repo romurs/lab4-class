@@ -4,8 +4,8 @@ include 'Gardener.php';
 include 'TomatoBuch.php';
 
 
-$bush = new TomatoBuch(5); 
-$gardener = new Gardener("Иван", $bush); 
+$bush = new TomatoBuch(5);
+$gardener = new Gardener("Иван", $bush);
 
 $gardener->KnowledgeBase();
 

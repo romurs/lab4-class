@@ -1,32 +1,36 @@
 <?php
 
 
-class Gardener{
+class Gardener
+{
     public $name;
     private $plant;
 
-    public function __construct($name, TomatoBuch $plant){
+    public function __construct($name, TomatoBuch $plant)
+    {
         $this->name = $name;
         $this->plant = $plant;
     }
 
-    public function  work(){
+    public function  work()
+    {
         if (!$this->plant->allAreRipe()) {
             $this->plant->growAll();
         }
     }
 
-    public function harvest(){
-        if($this->plant->allAreRipe()){
+    public function harvest()
+    {
+        if ($this->plant->allAreRipe()) {
             $this->plant->giveAwayAll();
-            print "{$this->name} cобирает урожай " .PHP_EOL;
-        }
-        else{
-            print "Садовник {$this->name} предупреждает: не все плоды созрели!" .PHP_EOL;
+            print "{$this->name} cобирает урожай " . PHP_EOL;
+        } else {
+            print "Садовник {$this->name} предупреждает: не все плоды созрели!" . PHP_EOL;
         }
     }
 
-    public function KnowledgeBase(){
+    public function KnowledgeBase()
+    {
         print "Справка по садоводству:\n";
         print "1. Регулярный полив растений.\n";
         print "2. Удаление сорняков и больных листьев.\n";
