@@ -26,9 +26,6 @@ class Tomato
 
     public function isRipe(): bool
     {
-        if ($this->state == self::RED_TOMATO) {
-            return true;
-        }
-        return false;
+        return $this->state == self::RED_TOMATO;
     }
 }
